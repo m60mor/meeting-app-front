@@ -2,7 +2,7 @@ import './navbar.css';
 
 export default function Navbar() {
     return (
-        <div>
+        <div className='navbar'>
             Sample Text
         </div>
     )
