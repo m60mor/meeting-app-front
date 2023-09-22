@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
-    padding-top: 6%;
+    padding: 200px;
+    padding-top: 8%;
 }
 
 .join-text {
@@ -26,7 +26,7 @@ body {
     padding: 0 10px 0 10px;
     border: none;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     cursor: pointer;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
@@ -48,4 +48,50 @@ body {
     height: 2px;
     margin: auto;
     transition: all 0.3s;
+}
+
+.meetings-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 100px;
+    justify-items: center;
+    padding: 20px 200px 200px 200px;
+}
+
+.meetings-box img {
+    width: 150px;
+}
+
+.functionalities-box {
+    background: #EEE;
+    display: grid;
+    grid-gap: 50px;
+    padding: 200px 0 200px 0;
+    border-radius: 20px;
+    margin: 0 5% 0 5%;
+}
+
+.functionality {
+    background: #111;
+    display: flex;
+    border-radius: 50px;
+    margin: 0 15% 0 15%;
+    color: #EEE;
+}
+
+.functionality-text {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.functionality img {
+    width: 350px;
+    height: 350px;
+    padding: 50px;
 }

@@ -1,5 +1,10 @@
 import './homePage.css';
 import Navbar from '../../components/navbar/Navbar';
+import Footbar from '../../components/footbar/Footbar';
+import meet1 from './meet1.jpg';
+import meet2 from './meet2.jpg';
+import meet3 from './meet3.jpg';
+import func1 from './func1.png';
 
 export default function HomePage() {
     return (
@@ -14,7 +19,33 @@ export default function HomePage() {
                     <div className='join-button--underline'></div>
                 </button>
             </div>
-            
+            <div className='meetings-box'>
+                <img src={meet1}></img>
+                <img src={meet2}></img>
+                <img src={meet3}></img>
+                <img src={meet1}></img>
+                <img src={meet2}></img>
+                <img src={meet3}></img>
+            </div>
+
+            <div className='functionalities-box'> 
+                <div className='functionality'>
+                    <div className='functionality-text'>
+                        Mapa Spotkań
+                        Znajdź miejsce spotkania na mapie lub wyszukaj publiczne spotkania 
+                    </div>
+                    <img src={func1}></img>
+                </div>
+                <div className='functionality'>
+                    <img src={func1}></img>
+                    <div className='functionality-text'>
+                        Mapa Spotkań
+                        Znajdź miejsce spotkania na mapie lub wyszukaj publiczne spotkania 
+                    </div>
+                </div>
+            </div>
+
+            <Footbar />
         </>
     )
 }
