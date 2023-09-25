@@ -1,4 +1,6 @@
 import './navbar.css';
+import Register from '../register/Register';
+import Login from '../login/Login';
 
 export default function Navbar() {
     return (
@@ -6,11 +8,8 @@ export default function Navbar() {
             <div className='navbar__logo'>Meety</div>
             <div className='navbar__select'></div>
             <div className='navbar__login'>
-                <button className='register-button'>Register</button>
-                <button className='login-button'>
-                    Login
-                    <div className='login-button--underline'></div>
-                </button>
+                <Register />
+                <Login />
             </div>
         </div>
     )

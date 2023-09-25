@@ -22,7 +22,7 @@
 .navbar__login {
 }
 
-.navbar button {
+button {
     width: 100px;
     height: 40px;
     padding: 0;
@@ -34,39 +34,39 @@
     font-weight: 600;
 }
 
-.register-button {
+.button-black {
     background: #222;
     margin-right: 10px;
     color: #FFF;
     transition: all 0.3s;
 }
 
-.register-button:hover {
+.button-black:hover {
     background: #FFF;
     color: #000;
 }
 
-.register-button:focus {
+.button-black:focus {
     border: none;
 }
 
-.login-button {
+.button-white {
     background: #FFF;
     border: none
 }
 
-.login-button:hover {
+.button-white:hover {
     background: #FFF;
-    .login-button--underline {
+    .button-white--underline {
         background: #222;
     }
 }
 
-.login-button:focus {
+.button-login:focus {
     border: none
 }
 
-.login-button--underline {
+.button-white--underline {
     position: relative;
     background: #EFEFEF;
     top: 8px;

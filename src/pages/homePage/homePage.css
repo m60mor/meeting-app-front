@@ -10,7 +10,7 @@ body {
     padding-top: 8%;
 }
 
-.join-text {
+.join-box__text {
     width: 700px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -18,7 +18,7 @@ body {
     text-align: justify;
 }
 
-.join-button {
+.join-box__button {
     background: #B88800;
     width: 150px;
     height: 60px;
@@ -29,18 +29,17 @@ body {
     margin-top: 60px;
     cursor: pointer;
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
 
-.join-button:hover {
-    .join-button--underline {
+.join-box__button:hover {
+    .join-box__button--underline {
         background: #FFF;
     }
 }
 
-.join-button--underline {
+.join-box__button--underline {
     position: relative;
     background: #B88800;
     top: 8px;
@@ -63,7 +62,7 @@ body {
     width: 150px;
 }
 
-.functionalities-box {
+.functionalities {
     background: #EEE;
     display: grid;
     grid-gap: 50px;
@@ -72,7 +71,7 @@ body {
     margin: 0 5% 0 5%;
 }
 
-.functionality {
+.functionalities__func {
     background: #111;
     display: flex;
     border-radius: 50px;
@@ -80,7 +79,7 @@ body {
     color: #EEE;
 }
 
-.functionality-text {
+.functionalities__func__text {
     display: flex;
     align-items: center;
     padding: 50px;
@@ -90,7 +89,7 @@ body {
     font-weight: 500;
 }
 
-.functionality img {
+.functionalities__func img {
     width: 350px;
     height: 350px;
     padding: 50px;
