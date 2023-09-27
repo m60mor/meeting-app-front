@@ -4,4 +4,5 @@
     top: -5px;
     left: 0px;
     height: 5px;
+    transition: all 1s;
 }

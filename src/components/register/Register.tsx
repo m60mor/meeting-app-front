@@ -52,14 +52,19 @@ export default function Register() {
     }
   }
 
+  const resetModal = () => {
+    handleClose();
+    setTimeout(() => {setPage(() => 1)}, 300);
+  }
+
   return (
     <>
       <button className='button-black' onClick={handleShow}>
         Zarejestruj
       </button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+      <Modal show={show} onHide={resetModal}>
+        <Modal.Header>
           <Modal.Title>Rejestracja</Modal.Title>
         </Modal.Header>
         <Modal.Body>

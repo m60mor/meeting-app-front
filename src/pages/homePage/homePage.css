@@ -94,3 +94,37 @@ body {
     height: 350px;
     padding: 50px;
 }
+
+.modal-dialog {
+    max-width: 450px;
+}
+
+.modal-title {
+    margin: auto;
+}
+
+.modal-body {
+    padding: 20px 50px 20px 50px;
+}
+
+.mb-3 {
+    text-align: center;
+}
+
+.mb-3 label {
+    margin: 25px 0 15px 0;
+}
+
+.form-control {
+    border: none;
+    border: 1px solid #FFF;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #222;
+    border-radius: 15px;
+}
