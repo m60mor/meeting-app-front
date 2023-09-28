@@ -60,6 +60,21 @@ body {
 
 .meetings-box img {
     width: 150px;
+    border-radius: 3px;
+}
+
+.meetings-box__meeting {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #FFF;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
 }
 
 .functionalities {
