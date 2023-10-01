@@ -1,11 +1,11 @@
-import './homePage.css';
+import './profilePage.css';
 import Navbar from '../../components/navbar/Navbar';
-import meet1 from './images/meet1.jpg';
+import meet1 from '../homePage/images/meet1.jpg';
 
-export default function HomePage() {
+export default function ProfilePage() {
     return (
         <>
-            <Navbar />
+            <Navbar logged={true}/>
             <img src={meet1}></img>
         </>
     )

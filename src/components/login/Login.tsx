@@ -3,11 +3,13 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
   const [show, setShow] = useState(false);
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleClose = () => {
     setShow(false);
@@ -20,6 +22,7 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    confirmLogin();
   }
 
   async function confirmLogin() 
@@ -35,23 +38,9 @@ export default function Login() {
       })
     })
     .then(response => response.json())
-    .then(jwt => sessionStorage.setItem('token', `${jwt.jwtToken}`));
+    .then(jwt => sessionStorage.setItem('token', `${jwt.jwtToken}`))
+    .then((navig) => navigate('/profile'));
   }
-  // .then(response => response.json())
-  // .then(user => {
-  //   console.log(user);
-  //   fetch('http://localhost:8081/api/v1/users/', {
-  //     method: 'GET',
-  //     mode: 'cors',
-  //     headers: {
-  //       'Authorization': `Bearer ${user.jwtToken}`
-  //     }
-  //   })
-  //   .then(users => setUsr(users))
-  //   .catch(err => console.log(err))
-  //   }
-  // )
-  // onSubmit={handleLogin(confirmLogin)}
 
   return (
     <>
@@ -94,7 +83,7 @@ export default function Login() {
             <button className='button-black' type='button' onClick={handleClose}>
               Zamknij
             </button>
-            <button className='button-white' type='submit' onClick={confirmLogin}>
+            <button className='button-white' type='submit'>
               Zaloguj
               <div className='button-white--underline'></div>
             </button>

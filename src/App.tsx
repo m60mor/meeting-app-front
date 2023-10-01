@@ -1,11 +1,13 @@
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import HomePage from './pages/homePage/HomePage';
+import Views from './Views';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <HomePage />
+      <BrowserRouter>
+        <Views />
+      </BrowserRouter>
     </>
   )
 }
